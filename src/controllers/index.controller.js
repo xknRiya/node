@@ -10,8 +10,9 @@ export const ping = async (req, res) => {
     res.json(result[0]);
 };
 export const missingData = async (req, res) => {
-    const result = await pool.query('SELECT "Missing data" AS result;');
-    res.json(result[0]);
+    return res.status(404).json({
+        message: 'Endpoint not found.'
+    })
 }
 export const redirect = (req, res)=>{
     res.redirect('/missing');

@@ -1,5 +1,7 @@
 CREATE DATABASE IF NOT EXISTS node_test;
+
 USE node_test;
+
 CREATE TABLE employees(
     id INT(11) NOT NULL AUTO_INCREMENT,
     name VARCHAR(45) DEFAULT NULL,
