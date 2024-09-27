@@ -8,7 +8,7 @@ export const missingData = async (req, res) => {
     return res.status(404).json({
         message: 'Endpoint not found.'
     })
-}
+};
 export const redirect = (req, res)=>{
     res.redirect('/missing');
-}
+};

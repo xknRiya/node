@@ -3,12 +3,15 @@ import { deleteEmployee, getEmployee, getEmployees, createEmployee, updateEmploy
 
 const router = Router();
 
-router.get('/employees/:id', getEmployee);
-router.get('/employees', getEmployees);
-router.post('/employees', createEmployee);
-router.patch('/employees/:id', updateEmployee);
-router.delete('/employees/:id', deleteEmployee);
+const route = 'employees';
 
-router.get('/reset', resetEmployees)
+router.get(`/${route}`, getEmployees);
 
-export default router
+router.get(`/${route}/:id`, getEmployee);
+router.post(`/${route}`, createEmployee);
+router.patch(`/${route}/:id`, updateEmployee);
+router.delete(`/${route}/:id`, deleteEmployee);
+
+router.get(`/${route}/reset`, resetEmployees);
+
+export default router;

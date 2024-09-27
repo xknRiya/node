@@ -32,3 +32,33 @@ INSERT INTO employees VALUES
   (18, 'Paula', 2100),
   (19, 'Quinn', 2300),
   (20, 'Ray', 2000);
+
+CREATE TABLE clients(
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(45) DEFAULT NULL,
+    PRIMARY KEY (id)
+);
+
+DESCRIBE clients;
+
+INSERT INTO clients VALUES
+  (1, 'Jane'),
+  (2, 'John'),
+  (3, 'Alice'),
+  (4, 'Bob'),
+  (5, 'Charlie'),
+  (6, 'Diana'),
+  (7, 'Ethan'),
+  (8, 'Fiona'),
+  (9, 'George'),
+  (10, 'Hannah'),
+  (11, 'Ian'),
+  (12, 'Judy'),
+  (13, 'Kevin'),
+  (14, 'Laura'),
+  (15, 'Mike'),
+  (16, 'Nina'),
+  (17, 'Oscar'),
+  (18, 'Paula'),
+  (19, 'Quinn'),
+  (20, 'Ray');
